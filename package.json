@@ -13,7 +13,10 @@
     "@tailwindcss/vite": "^4.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwindcss": "^4.0.0"
+    "tailwindcss": "^4.0.0",
+    "@splidejs/react-splide": "^0.7.12",
+    "hugeicons-react": "^0.3.0",
+    "react-router-dom": "^6.27.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
