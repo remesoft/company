@@ -1,5 +1,10 @@
 import React from "react";
+import Accordion from "../components/Accordion";
 
 export default function Home() {
-  return <div>This is my home page</div>;
+  return (
+    <>
+      <Accordion />
+    </>
+  );
 }
