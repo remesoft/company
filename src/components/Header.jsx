@@ -1,6 +1,6 @@
 import { Menu02Icon, Cancel02Icon } from "hugeicons-react";
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo1.png";
 import Nav from "./Nav";
 import NavLinks from "./NavLinks";
 import Button from "./ui/Button";
@@ -12,7 +12,7 @@ export default function Header() {
   };
   return (
     <>
-      <header className="sticky w-full top-0 left-0 z-50 shadow-md">
+      <header className="sticky w-full top-0 left-0 z-50 shadow-md bg-white">
         <div className="max-w-[100%] m-auto flex item-center justify-between px-4 py-4">
 
           <div className="logo">
