@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/logo-light.svg";
+import logoDark from "../assets/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import {
   CallAddIcon,
@@ -31,7 +32,7 @@ export default function Navbar() {
     <section className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-4 xl:px-0">
         <Link to="#">
-          <img className="h-10" src={logo} alt="" />
+          <img className="h-10" src={isScrolled ? logoDark : logo} alt="logo" />
         </Link>
         <nav className="hidden lg:block">
           <ul className="flex items-center gap-10">
@@ -59,7 +60,7 @@ export default function Navbar() {
             Book a call
           </Link>
           <button className="lg:hidden">
-            <Menu11Icon color="#fff" height={30} />
+            <Menu11Icon color={isScrolled ? "#1a2329 " : "#fff"} height={30} />
           </button>
         </div>
       </div>
