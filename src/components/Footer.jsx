@@ -6,8 +6,8 @@ import { Linkedin01Icon, TwitterIcon, YoutubeIcon } from "hugeicons-react";
 export default function Footer() {
   return (
     <div className="bg-[#14171F] text-[#DDDDDE]">
-      <div className="max-w-[1200px] lg:flex mx-auto py-16 px-4 lg:px-0 lg:gap-12">
-        <div className="flex lg:w-[30%] flex-col gap-2 items-center lg:items-start text-center lg:text-left">
+      <div className="mx-auto max-w-[1200px] px-4 py-16 lg:flex lg:gap-12 lg:px-0">
+        <div className="flex flex-col gap-2 lg:w-[30%] lg:items-start lg:text-left">
           <Link to="#">
             <img src={logo} alt="company logo" />
           </Link>
@@ -15,11 +15,11 @@ export default function Footer() {
             Make your data invisible by generating unlimited identities. The
             next-level in privacy protection for online and travel.
           </p>
-          <ul className="flex gap-2 mt-5">
+          <ul className="mt-5 flex gap-2">
             <li>
               <Link
                 to="#"
-                className="grid h-10 w-10  hover:bg-white/5 transition hover:scale-105  rounded-full place-content-center"
+                className="grid h-10 w-10 place-content-center rounded-full transition hover:scale-105 hover:bg-white/5"
               >
                 <YoutubeIcon />
               </Link>
@@ -27,7 +27,7 @@ export default function Footer() {
             <li>
               <Link
                 to="#"
-                className="grid h-10 w-10 hover:bg-white/5 transition hover:scale-105 rounded-full place-content-center"
+                className="grid h-10 w-10 place-content-center rounded-full transition hover:scale-105 hover:bg-white/5"
               >
                 <Linkedin01Icon />
               </Link>
@@ -35,17 +35,17 @@ export default function Footer() {
             <li>
               <Link
                 to="#"
-                className="grid h-10 w-10 hover:bg-white/5 transition hover:scale-105 rounded-full place-content-center"
+                className="grid h-10 w-10 place-content-center rounded-full transition hover:scale-105 hover:bg-white/5"
               >
                 <TwitterIcon />
               </Link>
             </li>
           </ul>
         </div>
-        <div className="grid lg:w-[70%] grid-cols-2 md:grid-cols-3 md:gap-4 gap-y-12 mt-12 lg:mt-0">
+        <div className="mt-12 grid grid-cols-2 gap-y-12 md:grid-cols-3 md:gap-4 lg:mt-0 lg:w-[70%]">
           <div className="md:text-center lg:text-left">
-            <h3 className="font-bold text-xl">Company</h3>
-            <ul className="flex flex-col gap-4 mt-6">
+            <h3 className="text-xl font-bold">Company</h3>
+            <ul className="mt-6 flex flex-col gap-4">
               <li>
                 <Link to="#" className="hover:underline">
                   Why ClarityU?
@@ -69,8 +69,8 @@ export default function Footer() {
             </ul>
           </div>
           <div className="md:text-center lg:text-left">
-            <h3 className="font-bold text-xl">Solutions</h3>
-            <ul className="flex flex-col gap-4 mt-6">
+            <h3 className="text-xl font-bold">Solutions</h3>
+            <ul className="mt-6 flex flex-col gap-4">
               <li>
                 <Link to="#" className="hover:underline">
                   Personal information removal
@@ -89,8 +89,8 @@ export default function Footer() {
             </ul>
           </div>
           <div className="md:text-center lg:text-left">
-            <h3 className="font-bold text-xl">Legal</h3>
-            <ul className="flex flex-col gap-4 mt-6">
+            <h3 className="text-xl font-bold">Legal</h3>
+            <ul className="mt-6 flex flex-col gap-4">
               <li>
                 <Link to="#" className="hover:underline">
                   Terms of Service

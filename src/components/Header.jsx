@@ -9,7 +9,6 @@ export default function Header() {
       <Navbar />
       <div className="w-full bg-[url(/src/assets/pattern-03.svg)] bg-center">
         <Hero />
-        {/* <Technologies /> */}
       </div>
       <div className="bg-[#23343F]">
         <p className="mx-auto max-w-[1200px] px-4 py-4 xl:px-0">
