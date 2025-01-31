@@ -6,10 +6,10 @@ import animation from "../assets/animations/coding.json";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center pt-40">
+    <section className="flex flex-col items-center pt-32 lg:pt-40">
       <div className="mx-auto flex max-w-[1200px] flex-col justify-between overflow-hidden px-4 pb-10 lg:flex-row xl:px-0">
         <div className="flex flex-col lg:w-1/2 lg:justify-center">
-          <p className="border-slate-00 self-start rounded-full border-slate-700 bg-[#1a2329] px-4 py-1">
+          <p className="self-start rounded-full border border-slate-600 bg-[#1a2329] px-4 py-1">
             <span className="inline-block bg-gradient-to-r from-[#99CAA9] to-[#4395A3] bg-clip-text text-transparent">
               Solution for tomorrow
             </span>
