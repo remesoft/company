@@ -6,8 +6,8 @@ import { Linkedin01Icon, TwitterIcon, YoutubeIcon } from "hugeicons-react";
 export default function Footer() {
   return (
     <div className="bg-[#14171F] text-[#DDDDDE]">
-      <div className="mx-auto max-w-[1200px] px-4 py-16 lg:flex lg:gap-12 lg:px-0">
-        <div className="flex flex-col gap-2 lg:w-[30%] lg:items-start lg:text-left">
+      <div className="mx-auto max-w-[1200px] px-4 py-16 lg:flex lg:gap-12 xl:px-0">
+        <div className="flex flex-col gap-2 md:items-center md:text-center lg:w-[30%] lg:items-start lg:text-left">
           <Link to="#">
             <img src={logo} alt="company logo" />
           </Link>
