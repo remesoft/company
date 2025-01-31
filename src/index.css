@@ -1,5 +1,31 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  font-family: "inter", sans-serif;
-  color: #111111;
+  font-family: "Inter", sans-serif;
+}
+
+.header-gradient {
+  background: linear-gradient(to bottom, #0c1622 0%, #54727a 100%);
+}
+
+.navbar {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  backdrop-filter: blur(0px);
+  transition: backdrop-filter 0.3s ease;
+}
+
+/* When scrolled, apply blur */
+.navbar.scrolled {
+  backdrop-filter: blur(10px);
+  color: #192f3a;
+}
+
+.hero-lottie {
+  transform: "scaleX(-1)";
+  height: "100%";
+  width: "100%";
 }

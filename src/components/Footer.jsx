@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo-light.svg";
 import { Linkedin01Icon, TwitterIcon, YoutubeIcon } from "hugeicons-react";
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-[1200px] lg:flex mx-auto py-16 px-4 lg:px-0 lg:gap-12">
         <div className="flex lg:w-[30%] flex-col gap-2 items-center lg:items-start text-center lg:text-left">
           <Link to="#">
-            <img src={logo} alt="My Image" />
+            <img src={logo} alt="company logo" />
           </Link>
           <p className="mt-4">
             Make your data invisible by generating unlimited identities. The
