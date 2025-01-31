@@ -29,7 +29,7 @@ export default function Navbar() {
   }, []);
   return (
     <section className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-      <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-6 xl:px-0">
+      <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-4 xl:px-0">
         <Link to="#">
           <img className="h-10" src={logo} alt="" />
         </Link>
