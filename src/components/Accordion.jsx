@@ -14,7 +14,7 @@ export default function Accordion() {
     <section className="px-4 py-16">
       <div className="mx-auto max-w-[1200px]">
         {accordionData.map((item, index) => (
-          <div className="border-b border-[#dddddd]">
+          <div key={index} className="border-b border-[#dddddd]">
             <button
               className={`flex w-full items-center justify-between gap-2 py-5 text-left transition ${
                 openIndex === index ? "font-semibold" : ""

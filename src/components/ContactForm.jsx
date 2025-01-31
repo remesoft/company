@@ -3,14 +3,14 @@ import sendIcon from "../assets/icons/icon-send.svg";
 
 export default function ContactForm() {
   return (
-    <section className="bg-[#F5F6F8] py-20">
+    <section className="bg-[#F5F6F8] px-4 py-20 xl:px-0">
       <div className="mx-auto max-w-[800px]">
         <h2 className="leading-12 text-3xl font-semibold">
           Love to here from you,
           <br /> Get in touch 👋
         </h2>
         <form action="">
-          <div className="mt-5 grid grid-cols-2 gap-x-5 gap-y-5">
+          <div className="mt-5 flex flex-col gap-5 md:grid md:grid-cols-2">
             <div className="flex flex-col gap-2">
               <label htmlFor="name">Your Name</label>
               <input
