@@ -15,7 +15,7 @@ export default function Hero() {
             </span>
           </p>
           <h1 className="mt-5 text-5xl font-semibold leading-[4rem]">
-            Empower your financial Journey with Zipper
+          Transforming Ideas into Digital Reality
           </h1>
           <p className="mt-4">
             Modern technology, trusted expertise,
