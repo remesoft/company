@@ -37,26 +37,25 @@ export default function Navbar() {
         <Link to="#">
           <img className="h-10" src={isScrolled ? logoDark : logo} alt="logo" />
         </Link>
-
         <nav
           className={`${isOpen ? "absolute left-0 top-full block h-screen w-full bg-gradient-to-b lg:w-auto xl:static xl:h-auto xl:bg-none" : "hidden"} ${
             isScrolled ? "from-white via-white" : "from-[#0E1925] via-[#0E1925]"
-          } via-50% to-[#ffffff00] p-4 lg:block`}
+          } via-50% to-[#ffffff00] p-4 lg:block lg:p-0`}
         >
-          <ul className="flex flex-col items-center xl:flex-row xl:gap-10">
-            <li className="flex w-full items-center justify-center gap-2 py-4 xl:w-auto xl:py-0">
+          <ul className="flex flex-col items-center gap-4 lg:flex-row lg:gap-4">
+            <li className="flex items-center justify-center gap-2 rounded-full px-6 py-2 lg:px-4 xl:w-auto xl:py-0">
               <Home03Icon className="h-[1.3rem]" />
               <NavLink>Home</NavLink>
             </li>
-            <li className="flex w-full items-center justify-center gap-2 py-4 xl:w-auto xl:py-0">
-              <NewsIcon className="h-[1.3rem]" />
+            <li className="flex items-center justify-center gap-2 whitespace-nowrap px-4 py-2 lg:px-4 xl:w-auto xl:py-0">
+              <NewsIcon className="h-[1.3rem" />
               <NavLink>About Us</NavLink>
             </li>
-            <li className="flex w-full items-center justify-center gap-2 py-4 xl:w-auto xl:py-0">
+            <li className="flex items-center justify-center gap-2 px-4 py-2 lg:px-4 xl:w-auto xl:py-0">
               <DeliveryBox01Icon className="h-[1.3rem]" />
               <NavLink>Services</NavLink>
             </li>
-            <li className="flex w-full items-center justify-center gap-2 py-4 xl:w-auto xl:py-0">
+            <li className="flex items-center justify-center gap-2 px-4 py-2 lg:px-4 xl:w-auto xl:py-0">
               <Comment01Icon className="h-[1.3rem]" />
               <NavLink>Contact</NavLink>
             </li>
