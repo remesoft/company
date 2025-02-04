@@ -1,52 +1,40 @@
-import { ComputerCloudIcon } from "hugeicons-react";
+import { ComputerCloudIcon, Globe02Icon, AndroidIcon, PaintBoardIcon, AiVideoIcon, SeoIcon, PencilEdit02Icon } from "hugeicons-react";
 
 export default [
   {
-    title: "Security Testing",
+    title: "Website Development",
     description:
-      "Security testing is a type of software testing that is focused determining if an information.",
-    icon: <ComputerCloudIcon className="h-6 w-6" />,
+      "We design and develop custom websites that are fast, responsive, and user-friendly. From sleek designs to powerful functionality, we create websites that help your business stand out and succeed online.",
+    icon: <Globe02Icon className="h-6 w-6" />,
   },
   {
-    title: "Security Testing",
+    title: "App Development",
     description:
       "Security testing is a type of software testing that is focused determining if an information.",
-    icon: <ComputerCloudIcon className="h-6 w-6" />,
+    icon: <AndroidIcon className="h-6 w-6" />,
   },
   {
-    title: "Security Testing",
+    title: "Graphics Design",
     description:
-      "Security testing is a type of software testing that is focused determining if an information.",
-    icon: <ComputerCloudIcon className="h-6 w-6" />,
+      "From logos and branding to marketing materials and social media visuals, our designs are tailored to reflect your unique identity and help you stand out in a crowded marketplace.",
+    icon: <PaintBoardIcon className="h-6 w-6" />,
   },
   {
-    title: "Security Testing",
+    title: "Video Editing",
     description:
-      "Security testing is a type of software testing that is focused determining if an information.",
-    icon: <ComputerCloudIcon className="h-6 w-6" />,
+      "We offer a range of video editing services to help you create engaging and visually stunning videos that captivate your audience and drive results.",
+    icon: <AiVideoIcon className="h-6 w-6" />,
   },
   {
-    title: "Security Testing",
+    title: "SEO Optimization",
     description:
-      "Security testing is a type of software testing that is focused determining if an information.",
-    icon: <ComputerCloudIcon className="h-6 w-6" />,
+      "Boost your online visibility and drive more traffic to your website with our expert SEO services. We optimize your site to rank higher on search engines, helping you reach the right audience and grow your business.",
+    icon: <SeoIcon className="h-6 w-6" />,
   },
   {
-    title: "Security Testing",
+    title: "Content Writing",
     description:
-      "Security testing is a type of software testing that is focused determining if an information.",
-    icon: <ComputerCloudIcon className="h-6 w-6" />,
-  },
-  {
-    title: "Security Testing",
-    description:
-      "Security testing is a type of software testing that is focused determining if an information.",
-    icon: <ComputerCloudIcon className="h-6 w-6" />,
-  },
-  {
-    title: "Security Testing",
-    description:
-      "Security testing is a type of software testing that is focused determining if an information.",
-    icon: <ComputerCloudIcon className="h-6 w-6" />,
+      "Our content writing services can help you create compelling content that will engage your audience and help you achieve your marketing goals.",
+    icon: <PencilEdit02Icon className="h-6 w-6" />,
   },
 ];
