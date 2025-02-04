@@ -33,3 +33,11 @@ body {
   height: "100%";
   width: "100%";
 }
+
+.section-padding {
+  @apply py-16 lg:py-28;
+}
+
+.section-margin {
+  @apply mx-auto max-w-[1200px] px-4 xl:px-0;
+}

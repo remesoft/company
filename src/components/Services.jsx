@@ -6,10 +6,10 @@ import servicesData from "../data/services";
 
 export default function Services() {
   return (
-    <section className="py-16 lg:py-36">
-      <div className="mx-auto max-w-[1200px] px-4 xl:px-0">
+    <section className="section-padding">
+      <div className="section-margin">
         <SectionIntro title="Our Services" subtitle="Services provides by us" />
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:mt-12 lg:grid-cols-3 xl:grid-cols-3">
           {servicesData.map((item, index) => (
             <ServicesCard
               key={index}
