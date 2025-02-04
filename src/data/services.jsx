@@ -1,4 +1,4 @@
-import { ComputerCloudIcon, Globe02Icon, AndroidIcon, PaintBoardIcon, AiVideoIcon, SeoIcon, PencilEdit02Icon } from "hugeicons-react";
+import { Globe02Icon, AndroidIcon, PaintBoardIcon, AiVideoIcon, SeoIcon, PencilEdit02Icon } from "hugeicons-react";
 
 export default [
   {
@@ -10,7 +10,7 @@ export default [
   {
     title: "App Development",
     description:
-      "Security testing is a type of software testing that is focused determining if an information.",
+      "We build innovative, user-friendly mobile apps tailored to your business needs. From concept to launch, we create apps that engage users, solve problems, and drive growth.",
     icon: <AndroidIcon className="h-6 w-6" />,
   },
   {

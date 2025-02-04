@@ -103,7 +103,9 @@ export default function Navbar() {
           </ul>
         </nav>
         <div className="flex items-center gap-2">
-          <Link className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900">
+          <Link className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900"
+            onClick={(e) => ripple.create(e, "dark")}
+          >
             <CallAddIcon className="h-5 w-5" />
             Book a call
           </Link>

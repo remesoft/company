@@ -1,6 +1,8 @@
 import React from "react";
 import SectionIntro from "./ui/SectionIntro";
-import webPortfolio from "../assets/portfolio/portfolio-web.png";
+import webPortfolio1 from "../assets/portfolio/digital-shikkhok.png";
+import webPortfolio2 from "../assets/portfolio/ftc.png";
+import webPortfolio3 from "../assets/portfolio/headway.png";
 import CategorySelector from "./ui/CategorySelector";
 
 export default function Portfolio() {
@@ -12,7 +14,11 @@ export default function Portfolio() {
           subtitle="See our popular projects"
         />
         <CategorySelector />
-        <img src={webPortfolio} alt="" />
+        <div className="grid h-[500px] gap-4 overflow-hidden md:grid-cols-2 lg:grid-cols-3">
+          <img src={webPortfolio1} alt="" className="h-full w-full" />
+          <img src={webPortfolio2} alt="" className="h-full w-full" />
+          <img src={webPortfolio3} alt="" className="h-full w-full" />
+        </div>
       </div>
       <div className="absolute bottom-0 h-1/3 w-full bg-gradient-to-t from-[#F5F6F8] to-transparent"></div>
     </section>
