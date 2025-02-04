@@ -1,10 +1,12 @@
-import { ArrowUpRight01Icon } from "hugeicons-react";
 import React from "react";
+import Ripple from "material-ripple-effects";
+import { ArrowUpRight01Icon } from "hugeicons-react";
 import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import animation from "../assets/animations/coding.json";
 
 export default function Hero() {
+  const ripple = new Ripple();
   return (
     <section className="flex flex-col items-center pt-32 lg:pt-40">
       <div className="mx-auto flex max-w-[1200px] flex-col justify-between overflow-hidden px-4 pb-10 lg:flex-row xl:px-0">
@@ -15,17 +17,23 @@ export default function Hero() {
             </span>
           </p>
           <h1 className="mt-5 text-5xl font-semibold leading-[4rem]">
-          Transforming Ideas into Digital Reality
+            Transforming Ideas into Digital Reality
           </h1>
-          <p className="mt-4">
-            Modern technology, trusted expertise,
-            <br /> and <strong>limitless potential.</strong>
+          <p className="mt-4 w-[70%]">
+            Modern technology, trusted expertise, and
+            <strong>limitless potential.</strong>
           </p>
           <div className="mt-5 flex items-center gap-4">
-            <Link className="block rounded-full bg-lime-300 px-8 py-3 font-semibold text-slate-900 transition">
+            <Link
+              className="block rounded-full bg-lime-300 px-8 py-3 font-semibold text-slate-900 transition"
+              onClick={(e) => ripple.create(e, "dark")}
+            >
               Get Started Today
             </Link>
-            <Link className="flex rounded-full bg-white px-3 py-3">
+            <Link
+              className="flex rounded-full bg-white px-3 py-3"
+              onClick={(e) => ripple.create(e, "dark")}
+            >
               <ArrowUpRight01Icon color="#1a2329" />
             </Link>
           </div>
