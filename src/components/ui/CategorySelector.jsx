@@ -23,7 +23,7 @@ export default function CategorySelector() {
   }, [selected]);
 
   return (
-    <div className="flex items-center justify-center text-sm">
+    <div className="mb-10 mt-5 flex items-center justify-center text-sm">
       <div
         ref={containerRef}
         className="relative flex rounded-full bg-gray-200 p-2"

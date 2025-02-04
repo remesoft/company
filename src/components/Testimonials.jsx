@@ -13,7 +13,7 @@ export default function Testimonials() {
           title="Testimonials"
           subtitle="What client say about us"
         />
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:mt-12 xl:grid-cols-3">
           {testimonialData.map((item, index) => (
             <TestimonialCard key={index} {...item} />
           ))}

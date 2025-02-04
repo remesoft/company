@@ -12,7 +12,7 @@ export default function Team() {
           title="Management Team"
           subtitle="Commitment From Leaders"
         />
-        <div className="mx-auto flex max-w-[800px] justify-center gap-5">
+        <div className="mx-auto mt-12 flex max-w-[800px] justify-center gap-5 lg:mt-12">
           {/* card one start  */}
           <div>
             <div className="mb-5 h-[400px] overflow-hidden rounded-md bg-slate-200">
