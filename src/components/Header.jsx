@@ -12,9 +12,9 @@ export default function Header() {
       </div>
       <div className="bg-[#23343F]">
         <p className="mx-auto max-w-[1200px] px-4 py-4 xl:px-0">
-          Manage and grow your{" "}
-          <strong className="text-yellow-300">business</strong> with us for a
-          seamless and successful experience.
+          Manage and
+          <strong className="text-yellow-300"> grow your business</strong> with
+          us for a seamless and successful experience.
         </p>
       </div>
     </header>
