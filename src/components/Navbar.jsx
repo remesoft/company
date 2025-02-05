@@ -3,14 +3,8 @@ import Ripple from "material-ripple-effects";
 import logo from "../assets/logo-light.svg";
 import logoDark from "../assets/logo.svg";
 import { Link, NavLink } from "react-router-dom";
-import {
-  CallAddIcon,
-  Comment01Icon,
-  DeliveryBox01Icon,
-  Home03Icon,
-  Menu11Icon,
-  NewsIcon,
-} from "hugeicons-react";
+import { CallAddIcon, Menu11Icon } from "hugeicons-react";
+import menuData from "../data/main-menu";
 
 export default function Navbar() {
   const ripple = new Ripple();
@@ -40,70 +34,33 @@ export default function Navbar() {
           <img className="h-10" src={isScrolled ? logoDark : logo} alt="logo" />
         </Link>
         <nav
+          onClick={() => setTimeout(() => setIsOpen(false), 200)}
           className={`${isOpen ? "absolute left-0 top-full block h-screen w-full bg-gradient-to-b lg:w-auto xl:static xl:h-auto xl:bg-none" : "hidden"} ${
             isScrolled ? "from-white via-white" : "from-[#0E1925] via-[#0E1925]"
           } via-50% to-[#ffffff00] p-4 lg:block lg:p-0`}
         >
           <ul className="flex flex-col items-center gap-4 lg:flex-row lg:gap-2">
-            <li className="w-full">
-              <NavLink
-                className="mx-auto flex w-[40%] items-center justify-center gap-2 rounded-full py-2 lg:w-auto lg:px-4 xl:w-auto xl:py-1"
-                onClick={(e) =>
-                  isScrolled
-                    ? ripple.create(e, "dark")
-                    : ripple.create(e, "light")
-                }
-              >
-                <Home03Icon className="h-[1.3rem]" />
-                Home
-              </NavLink>
-            </li>
-
-            <li className="w-full">
-              <NavLink
-                className="mx-auto flex w-[40%] items-center justify-center gap-2 whitespace-nowrap rounded-full py-2 lg:w-auto lg:px-4 xl:w-auto xl:py-1"
-                onClick={(e) =>
-                  isScrolled
-                    ? ripple.create(e, "dark")
-                    : ripple.create(e, "light")
-                }
-              >
-                <NewsIcon className="h-[1.3rem]" />
-                About Us
-              </NavLink>
-            </li>
-
-            <li className="w-full">
-              <NavLink
-                className="mx-auto flex w-[40%] items-center justify-center gap-2 rounded-full py-2 lg:w-auto lg:px-4 xl:w-auto xl:py-1"
-                onClick={(e) =>
-                  isScrolled
-                    ? ripple.create(e, "dark")
-                    : ripple.create(e, "light")
-                }
-              >
-                <DeliveryBox01Icon className="h-[1.3rem]" />
-                Services
-              </NavLink>
-            </li>
-
-            <li className="w-full">
-              <NavLink
-                className="mx-auto flex w-[40%] items-center justify-center gap-2 rounded-full py-2 lg:w-auto lg:px-4 xl:w-auto xl:py-1"
-                onClick={(e) =>
-                  isScrolled
-                    ? ripple.create(e, "dark")
-                    : ripple.create(e, "light")
-                }
-              >
-                <Comment01Icon className="h-[1.3rem]" />
-                Contact
-              </NavLink>
-            </li>
+            {menuData.map((item, index) => (
+              <li key={index} className="w-full">
+                <NavLink
+                  to={item.path}
+                  className={`${isScrolled ? "hover:bg-slate-400" : "hover:bg-slate-100"} mx-auto flex w-[40%] items-center justify-center gap-2 whitespace-nowrap rounded-full py-2 transition-all hover:bg-opacity-10 lg:w-auto lg:px-4 xl:w-auto xl:py-1`}
+                  onClick={(e) =>
+                    isScrolled
+                      ? ripple.create(e, "dark")
+                      : ripple.create(e, "light")
+                  }
+                >
+                  {item.icon}
+                  {item.name}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className="flex items-center gap-2">
-          <Link className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900"
+          <Link
+            className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition-all hover:bg-slate-50"
             onClick={(e) => ripple.create(e, "dark")}
           >
             <CallAddIcon className="h-5 w-5" />
