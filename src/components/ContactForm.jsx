@@ -3,7 +3,7 @@ import sendIcon from "../assets/icons/icon-send.svg";
 
 export default function ContactForm() {
   return (
-    <section className="bg-[#F5F6F8] px-4 py-20 xl:px-0">
+    <section className="px-4 py-20 xl:px-0">
       <div className="mx-auto max-w-[800px]">
         <h2 className="leading-12 text-3xl font-semibold">
           Love to here from you,

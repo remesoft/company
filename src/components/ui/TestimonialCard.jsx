@@ -3,7 +3,7 @@ import quote from "../../assets/icons/quote.svg";
 
 export default function TestimonialCard(props) {
   return (
-    <div className="rounded-md bg-white p-5">
+    <div className="rounded-md border bg-[#F7F8F8] p-4">
       <div className="flex justify-between">
         <div className="flex w-full items-center gap-4">
           <img
@@ -16,7 +16,7 @@ export default function TestimonialCard(props) {
             <small className="text-slate-600">{props.role}</small>
           </div>
         </div>
-        <img className="h-10" src={quote} alt="quote" />
+        {/* <img className="h-10" src={quote} alt="quote" /> */}
       </div>
       <p className="mt-3">{props.message}</p>
     </div>

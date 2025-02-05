@@ -7,7 +7,7 @@ import TestimonialCard from "./ui/TestimonialCard";
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#F5F6F8] py-16 lg:py-36">
+    <section className="py-16 lg:py-36">
       <div className="mx-auto max-w-[1200px] px-4 xl:px-0">
         <SectionIntro
           title="Testimonials"

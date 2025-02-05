@@ -11,7 +11,7 @@ export default function Accordion() {
   };
 
   return (
-    <section className="px-4 py-16">
+    <section className="bg-[#f5f6f84f] px-4 py-16">
       <div className="mx-auto max-w-[1200px]">
         {accordionData.map((item, index) => (
           <div key={index} className="border-b border-[#dddddd]">

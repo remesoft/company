@@ -6,7 +6,7 @@ import anik from "../assets/leaders/anik.jpg";
 
 export default function Team() {
   return (
-    <section className="px-4 py-16 lg:py-36">
+    <section className="bg-[#F5F6F8] px-4 py-16 lg:py-36">
       <div>
         <SectionIntro
           title="Management Team"
