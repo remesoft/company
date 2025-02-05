@@ -7,7 +7,7 @@ export default function TestimonialCard(props) {
       <div className="flex justify-between">
         <div className="flex w-full items-center gap-4">
           <img
-            className="h-10 w-10 rounded-full border border-slate-300"
+            className="h-10 w-10 rounded-full border border-slate-300 object-cover"
             src={props.avatar}
             alt="client"
           />
@@ -16,7 +16,7 @@ export default function TestimonialCard(props) {
             <small className="text-slate-600">{props.role}</small>
           </div>
         </div>
-        {/* <img className="h-10" src={quote} alt="quote" /> */}
+        <img className="h-5 opacity-30" src={quote} alt="quote" />
       </div>
       <p className="mt-3">{props.message}</p>
     </div>

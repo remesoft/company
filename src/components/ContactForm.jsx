@@ -14,7 +14,7 @@ export default function ContactForm() {
             <div className="flex flex-col gap-2">
               <label htmlFor="name">Your Name</label>
               <input
-                className="rounded border border-slate-200 bg-white px-4 py-2 focus:outline-1 focus:outline-slate-300"
+                className="rounded border border-slate-200 bg-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
                 type="text"
                 placeholder="Enter your name"
               />
@@ -22,7 +22,7 @@ export default function ContactForm() {
             <div className="flex flex-col gap-2">
               <label htmlFor="name">Your Email</label>
               <input
-                className="rounded border border-slate-200 bg-white px-4 py-2 focus:outline-1 focus:outline-slate-300"
+                className="rounded border border-slate-200 bg-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
                 type="text"
                 placeholder="Enter your name"
               />
@@ -30,7 +30,7 @@ export default function ContactForm() {
             <div className="flex flex-col gap-2">
               <label htmlFor="name">What you are interested</label>
               <input
-                className="rounded border border-slate-200 bg-white px-4 py-2 focus:outline-1 focus:outline-slate-300"
+                className="rounded border border-slate-200 bg-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
                 type="text"
                 placeholder="Enter your name"
               />
@@ -38,7 +38,7 @@ export default function ContactForm() {
             <div className="flex flex-col gap-2">
               <label htmlFor="name">Project Budget</label>
               <input
-                className="rounded border border-slate-200 bg-white px-4 py-2 focus:outline-1 focus:outline-slate-300"
+                className="rounded border border-slate-200 bg-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
                 type="text"
                 placeholder="Enter your name"
               />
@@ -50,7 +50,7 @@ export default function ContactForm() {
                 placeholder="Let tell us know your project about"
                 id=""
                 rows={4}
-                className="rounded border border-slate-200 bg-white px-4 py-2 focus:outline-1 focus:outline-slate-300"
+                className="rounded border border-slate-200 bg-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
               ></textarea>
             </div>
           </div>

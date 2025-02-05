@@ -6,13 +6,13 @@ import anik from "../assets/leaders/anik.jpg";
 
 export default function Team() {
   return (
-    <section className="bg-[#F5F6F8] px-4 py-16 lg:py-36">
-      <div>
+    <section className="section-padding bg-[#F5F6F8]">
+      <div className="mx-auto max-w-[800px]">
         <SectionIntro
           title="Management Team"
           subtitle="Commitment From Leaders"
         />
-        <div className="mx-auto mt-12 flex max-w-[800px] justify-center gap-5 lg:mt-12">
+        <div className="mt-12 flex justify-center gap-5 lg:mt-12">
           {/* card one start  */}
           <div>
             <div className="mb-5 h-[400px] overflow-hidden rounded-md bg-slate-200">
