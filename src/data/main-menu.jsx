@@ -1,10 +1,7 @@
 import {
   Comment01Icon,
   DeliveryBox01Icon,
-  File01Icon,
   File02Icon,
-  FileZipIcon,
-  Layers01Icon,
   NewsIcon,
 } from "hugeicons-react";
 
