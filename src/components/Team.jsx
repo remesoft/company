@@ -7,7 +7,7 @@ import anik from "../assets/leaders/anik.jpg";
 export default function Team() {
   return (
     <section className="section-padding bg-[#F5F6F8]">
-      <div className="mx-auto max-w-[800px]">
+      <div className="mx-auto max-w-[800px] px-4 lg:px-0">
         <SectionIntro
           title="Management Team"
           subtitle="Commitment From Leaders"
