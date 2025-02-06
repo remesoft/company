@@ -7,7 +7,7 @@ export default [
   {
     title: "Which Technologies do you use?",
     content:
-      "We use MERN stack. The stack consists of MongoDB, Express, React, and Node js.",
+      "We use all the modern technologies based on the project requirements and our clients preferences.",
   },
   {
     title: "How do I get started with your services?",

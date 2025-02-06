@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import accordionData from "../data/accordion";
 import { ArrowDown01Icon } from "hugeicons-react";
+import SectionIntro from "./ui/SectionIntro";
 
 export default function Accordion() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -12,7 +13,8 @@ export default function Accordion() {
 
   return (
     <section className="bg-[#f5f6f84f] px-4 py-16">
-      <div className="mx-auto max-w-[1200px]">
+      <SectionIntro subtitle="Frequently Asked Questions" />
+      <div className="mx-auto max-w-[1200px] mt-8">
         {accordionData.map((item, index) => (
           <div key={index} className="border-b border-[#dddddd]">
             <button

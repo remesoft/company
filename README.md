@@ -6,3 +6,7 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+- [Google Sheet Deployment ID](AKfycbyQIQZhlTEVGw-AnVwDDS9wVp0WFl8oTdKxWVYQxLY1DIdFRrHZFQHO4aGot4qWwXGvvQ)
+
+- [Google Sheet Url](https://script.google.com/macros/s/AKfycbw4LbtDC2OnBEnBGkf9E4hRXhFf4AcCUxmndhVLrqMq4eFBwDs6dzJg0Yk6moiG5Qd6fw/exec)
