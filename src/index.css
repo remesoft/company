@@ -41,3 +41,7 @@ body {
 .section-margin {
   @apply mx-auto max-w-[1200px] px-4 xl:px-0;
 }
+
+.splide__slide {
+  transition: transform 0.3s linear !important;
+}

@@ -1,22 +1,41 @@
 import React from "react";
 import SectionIntro from "./ui/SectionIntro";
-import avatar from "../assets/avatars/dwip.jpg";
-import quote from "../assets/icons/quote.svg";
 import testimonialData from "../data/testimonials";
 import TestimonialCard from "./ui/TestimonialCard";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 
 export default function Testimonials() {
+  const splideOptions = {
+    interval: 3000,
+    type: "loop",
+    perPage: 3,
+    perMove: 1,
+    gap: "20px",
+    pagination: false,
+    autoHeight: true,
+    autoplay: true,
+    breakpoints: {
+      1024: { perPage: 2 },
+      768: { perPage: 1 },
+    },
+  };
+
   return (
     <section className="section-padding">
       <div className="section-margin">
         <SectionIntro
           title="Testimonials"
-          subtitle="What client say about us"
+          subtitle="What clients say about us"
         />
-        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:mt-12 xl:grid-cols-3">
-          {testimonialData.map((item, index) => (
-            <TestimonialCard key={index} {...item} />
-          ))}
+        <div className="mt-8 lg:mt-12">
+          <Splide options={splideOptions} aria-label="Client Testimonials">
+            {testimonialData.map((item, index) => (
+              <SplideSlide key={index}>
+                <TestimonialCard {...item} />
+              </SplideSlide>
+            ))}
+          </Splide>
         </div>
       </div>
     </section>
