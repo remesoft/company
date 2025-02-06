@@ -4,37 +4,37 @@ export default [
   {
     title: "Website Development",
     description:
-      "We design and develop custom websites that are fast, responsive, and user-friendly. From sleek designs to powerful functionality, we create websites that help your business stand out and succeed online.",
+      "We create fast, responsive, and user-friendly websites tailored to your business. From sleek designs to powerful functionality, we ensure your online presence stands out and drives success.",
     icon: <Globe02Icon className="h-6 w-6" />,
   },
   {
     title: "App Development",
     description:
-      "We build innovative, user-friendly mobile apps tailored to your business needs. From concept to launch, we create apps that engage users, solve problems, and drive growth.",
+      "We design and build innovative mobile apps that solve problems and engage users. From concept to launch, we deliver apps that drive growth and enhance user experiences.",
     icon: <AndroidIcon className="h-6 w-6" />,
   },
   {
     title: "Graphics Design",
     description:
-      "From logos and branding to marketing materials and social media visuals, our designs are tailored to reflect your unique identity and help you stand out in a crowded marketplace.",
+      "We craft stunning visuals, from logos to marketing materials, that reflect your brand’s identity. Our designs help you stand out and make a lasting impression.",
     icon: <PaintBoardIcon className="h-6 w-6" />,
   },
   {
     title: "Video Editing",
     description:
-      "We offer a range of video editing services to help you create engaging and visually stunning videos that captivate your audience and drive results.",
+      "We transform raw footage into captivating videos that tell your story. Our editing services ensure your content is engaging, professional, and results-driven.",
     icon: <AiVideoIcon className="h-6 w-6" />,
   },
   {
     title: "SEO Optimization",
     description:
-      "Boost your online visibility and drive more traffic to your website with our expert SEO services. We optimize your site to rank higher on search engines, helping you reach the right audience and grow your business.",
+      "We optimize your website to rank higher on search engines, driving more traffic and visibility. Our SEO strategies help you reach the right audience and grow your business.",
     icon: <SeoIcon className="h-6 w-6" />,
   },
   {
     title: "Content Writing",
     description:
-      "Our content writing services can help you create compelling content that will engage your audience and help you achieve your marketing goals.",
+      "We create compelling, high-quality content that engages your audience and supports your marketing goals. Our writing services help you communicate effectively and build trust.",
     icon: <PencilEdit02Icon className="h-6 w-6" />,
   },
 ];
