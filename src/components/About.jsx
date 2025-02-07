@@ -1,7 +1,5 @@
 import React from "react";
 import SectionIntro from "./ui/SectionIntro";
-import about1 from "../assets/about/about-img-1.png";
-import about2 from "../assets/about/about-img-2.png";
 import about from "../assets/about/About-img.png";
 
 export default function About() {
