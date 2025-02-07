@@ -1,31 +1,35 @@
-import project1 from "../assets/portfolio/web/digital-shikkhok.png";
-import project2 from "../assets/portfolio/web/ftc.png";
-import project3 from "../assets/portfolio/web/headway.png";
-import project4 from "../assets/portfolio/web/travel-website.png";
+import project1 from "../assets/portfolio/web/digital-shikkhok.webp";
+import project2 from "../assets/portfolio/web/ftc.webp";
+import project3 from "../assets/portfolio/web/headway.webp";
+import project4 from "../assets/portfolio/app/todo.webp";
 
 export default [
   {
     image: project1,
-    title: "Online Learning Platform",
-    description: "A web platform for online courses and skill development.",
-    link: "https://github.com",
+    title: "Digital Shikkhok",
+    description:
+      "An online platform offering diverse courses and skill development for everyone.",
+    link: "https://www.digitalshikkhok.com/",
   },
   {
     image: project2,
     title: "Financial Training Center",
-    description: "A web app for financial education and training programs.",
-    link: "https://github.com",
+    description:
+      "A web app providing expert-led courses on finance and investment strategies.",
+    link: "https://ftc-bd.com/",
   },
   {
     image: project3,
-    title: "Engineering Institute",
-    description: "A web platform for engineering education and resources.",
-    link: "https://github.com",
+    title: "Headway Institute",
+    description:
+      "An educational site offering courses and resources for diploma engineers and professionals.",
+    link: "https://headway.edu.bd/",
   },
   {
     image: project4,
-    title: "Travel Guide",
-    description: "A web app for travel planning and destination guides.",
-    link: "https://github.com",
-  }
+    title: "Task Manager Pro",
+    description:
+      "An intuitive and powerful app for efficiently organizing, prioritizing, and managing daily tasks.",
+    link: "https://remesoft-to-do-and-wallpapers.en.uptodown.com/android",
+  },
 ];

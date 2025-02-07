@@ -24,8 +24,8 @@ export default function Portfolio() {
                     alt="Project Image"
                   />
                 </div>
-                <div className="px-2 pb-4">
-                  <h4 className="mb-0.5 font-semibold">{item.title}</h4>
+                <div className="mt-2 px-4 pb-4">
+                  <h4 className="mb-1 font-semibold">{item.title}</h4>
                   <p className="font-inter text-sm">{item.description}</p>
                 </div>
               </div>
