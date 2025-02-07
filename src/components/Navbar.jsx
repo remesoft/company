@@ -44,7 +44,7 @@ export default function Navbar() {
               <li key={index} className="w-full">
                 <NavLink
                   to={item.path}
-                  className={`${isScrolled ? "hover:bg-slate-400" : "hover:bg-slate-100"} mx-auto flex w-[40%] items-center justify-center gap-2 whitespace-nowrap rounded-full py-2 transition-all hover:bg-opacity-10 lg:w-auto lg:px-4 xl:w-auto xl:py-1`}
+                  className={`${isScrolled ? "text-black hover:bg-slate-400" : "text-white hover:bg-slate-100"} mx-auto flex w-[40%] items-center justify-center gap-2 whitespace-nowrap rounded-full py-2 transition-all hover:bg-opacity-10 lg:w-auto lg:px-4 xl:w-auto xl:py-1`}
                   onClick={(e) =>
                     isScrolled
                       ? ripple.create(e, "dark")

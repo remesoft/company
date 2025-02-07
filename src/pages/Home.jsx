@@ -5,16 +5,25 @@ import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import Team from "../components/Team";
 import Portfolio from "../components/Portfolio";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import HeroDivider from "../components/HeroDivider";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
     <>
+      <Header>
+        <Hero />
+        <HeroDivider />
+      </Header>
       <Services />
       <Portfolio />
       <Testimonials />
       <Team />
       <ContactForm />
       <Accordion />
+      <Footer />
     </>
   );
 }
