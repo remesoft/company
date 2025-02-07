@@ -27,7 +27,7 @@ export default [
   },
   {
     image: project4,
-    title: "Task Manager Pro",
+    title: "Remesoft Todo & Wallpapers",
     description:
       "An intuitive and powerful app for efficiently organizing, prioritizing, and managing daily tasks.",
     link: "https://remesoft-to-do-and-wallpapers.en.uptodown.com/android",

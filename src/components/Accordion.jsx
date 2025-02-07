@@ -12,9 +12,9 @@ export default function Accordion() {
   };
 
   return (
-    <section className="bg-[#f5f6f84f] px-4 py-16">
+    <section className="bg-[#F5F6F8] px-4 py-16">
       <SectionIntro subtitle="Frequently Asked Questions" />
-      <div className="mx-auto max-w-[1200px] mt-8">
+      <div className="mx-auto mt-8 max-w-[1200px]">
         {accordionData.map((item, index) => (
           <div key={index} className="border-b border-[#dddddd]">
             <button

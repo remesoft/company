@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Portfolio() {
   return (
-    <section className="section-padding relative bg-[#F5F6F8]">
+    <section id="portfolio" className="section-padding relative bg-[#F5F6F8]">
       <div className="section-margin">
         <SectionIntro
           title="Our Portfolio"

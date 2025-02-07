@@ -1,7 +1,7 @@
 import React from "react";
 import Ripple from "material-ripple-effects";
 import { ArrowUpRight01Icon } from "hugeicons-react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import Lottie from "lottie-react";
 import animation from "../assets/animations/coding.json";
 
@@ -27,14 +27,18 @@ export default function Hero() {
             </p>
             <div className="mt-8 flex items-center gap-4">
               <Link
-                to="#contact-us"
+                to="contact-us"
+                smooth={true}
+                duration={500}
                 className="block rounded-full bg-lime-400 px-8 py-3 font-semibold text-slate-900 transition-all hover:bg-lime-500"
                 onClick={(e) => ripple.create(e, "dark")}
               >
                 Get Started Today
               </Link>
               <Link
-                to="#contact-us"
+                to="contact-us"
+                smooth={true}
+                duration={500}
                 className="flex rounded-full bg-white px-3 py-3 transition-all hover:bg-slate-100"
                 onClick={(e) => ripple.create(e, "dark")}
               >

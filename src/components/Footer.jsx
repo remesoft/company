@@ -15,7 +15,7 @@ export default function Footer() {
     <div className="bg-[#14171F] text-[#DDDDDE]">
       <div className="mx-auto max-w-[1200px] px-4 py-16 lg:flex lg:gap-12 xl:px-0">
         <div className="flex flex-col gap-2 md:items-center md:text-center lg:w-[30%] lg:items-start lg:text-left">
-          <Link to="#">
+          <Link to="/">
             <img src={logo} alt="company logo" />
           </Link>
           <p className="mt-4">
@@ -56,28 +56,36 @@ export default function Footer() {
             <h3 className="text-xl font-bold">Quick Links</h3>
             <ul className="mt-6 flex flex-col gap-4">
               <li>
-                <Link to="#" className="hover:underline">
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="hover:underline">
+                <Link className="hover:underline" to="/#about-us">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="#" className="hover:underline">
+                <Link className="hover:underline" to="/#services">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:underline" to="/#contact-us">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="#" className="hover:underline">
+                <Link
+                  to="privacy-policy"
+                  className="hover:underline"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="#" className="hover:underline">
-                  Terms of Service
+                <Link
+                  to="terms-and-conditions"
+                  className="hover:underline"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Terms and Conditions
                 </Link>
               </li>
             </ul>
@@ -86,32 +94,32 @@ export default function Footer() {
             <h3 className="text-xl font-bold">Services</h3>
             <ul className="mt-6 flex flex-col gap-4">
               <li>
-                <Link to="#" className="hover:underline">
+                <Link to="/#services" className="hover:underline">
                   Website Development
                 </Link>
               </li>
               <li>
-                <Link to="#" className="hover:underline">
+                <Link to="/#services" className="hover:underline">
                   App Development
                 </Link>
               </li>
               <li>
-                <Link to="#" className="hover:underline">
+                <Link to="/#services" className="hover:underline">
                   Graphics Design
                 </Link>
               </li>
               <li>
-                <Link to="#" className="hover:underline">
+                <Link to="/#services" className="hover:underline">
                   Video Editing
                 </Link>
               </li>
               <li>
-                <Link to="#" className="hover:underline">
+                <Link to="/#services" className="hover:underline">
                   SEO
                 </Link>
               </li>
               <li>
-                <Link to="#" className="hover:underline">
+                <Link to="/#services" className="hover:underline">
                   Content Writing
                 </Link>
               </li>
