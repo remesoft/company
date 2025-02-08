@@ -52,7 +52,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="mt-12 grid grid-cols-2 gap-y-12 md:grid-cols-3 md:gap-4 lg:mt-0 lg:w-[70%]">
-          <div className="md:text-center lg:text-left">
+          <div className="mr-2 md:text-left lg:text-left">
             <h3 className="text-xl font-bold">Quick Links</h3>
             <ul className="mt-6 flex flex-col gap-4">
               <li>
@@ -90,7 +90,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="md:text-center lg:text-left">
+          <div className="md:text-left lg:text-left">
             <h3 className="text-xl font-bold">Services</h3>
             <ul className="mt-6 flex flex-col gap-4">
               <li>
@@ -125,7 +125,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="md:text-center lg:text-left">
+          <div className="col-span-2 md:col-span-1 md:text-center lg:text-left">
             <h3 className="text-xl font-bold">Address</h3>
             <ul className="mt-6 flex flex-col gap-4">
               <li>
