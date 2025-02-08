@@ -93,11 +93,29 @@ export default function Footer() {
           <div className="md:text-left lg:text-left">
             <h3 className="text-xl font-bold">Services</h3>
             <ul className="mt-6 flex flex-col gap-4">
-              <li>
+            <li>
                 <Link to="/#services" className="hover:underline">
-                  Website Development
+                  SEO
                 </Link>
               </li>
+
+
+              <li>
+                <Link to="/#services" className="hover:underline">
+                  Video Editing
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/#services" className="hover:underline">
+                  Content Writing
+                </Link>
+              </li>
+              <li>
+                <Link to="/#services" className="hover:underline">
+                  Graphics Design
+                </Link>
+              </li>   
               <li>
                 <Link to="/#services" className="hover:underline">
                   App Development
@@ -105,22 +123,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/#services" className="hover:underline">
-                  Graphics Design
-                </Link>
-              </li>
-              <li>
-                <Link to="/#services" className="hover:underline">
-                  Video Editing
-                </Link>
-              </li>
-              <li>
-                <Link to="/#services" className="hover:underline">
-                  SEO
-                </Link>
-              </li>
-              <li>
-                <Link to="/#services" className="hover:underline">
-                  Content Writing
+                  Website Development
                 </Link>
               </li>
             </ul>
