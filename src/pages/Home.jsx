@@ -13,7 +13,11 @@ import About from "../components/About";
 
 export default function Home() {
   const location = useLocation(); // React Router hook to get the current path
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  const handleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
   useEffect(() => {
     const scrollToHash = () => {
       setTimeout(() => {
@@ -34,8 +38,8 @@ export default function Home() {
   }, [location]); // Run effect whenever location changes
 
   return (
-    <>
-      <Header>
+    <section className={isDarkMode ? "dark" : ""}>
+      <Header darkMode={isDarkMode} handleDarkMode={handleDarkMode}>
         <Hero />
       </Header>
       <HeroDivider />
@@ -43,10 +47,9 @@ export default function Home() {
       <Portfolio />
       <Testimonials />
       <About />
-      {/* <Team /> */}
       <ContactForm />
       <Accordion />
       <Footer />
-    </>
+      </section>
   );
 }

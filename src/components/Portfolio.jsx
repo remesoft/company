@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="section-padding relative bg-[#F5F6F8]">
+    <section id="portfolio" className="section-padding relative bg-[#F5F6F8] dark:bg-[#132333]">
       <div className="section-margin">
         <SectionIntro
           title="Our Portfolio"
@@ -15,7 +15,7 @@ export default function Portfolio() {
           {portfolioData.map((item, index) => (
             <Link key={index} to={item.link}>
               <div
-                className={`flex flex-col border bg-white transition hover:bg-slate-50`}
+                className={`flex flex-col border bg-white dark:bg-[#14171F] transition hover:bg-slate-50`}
               >
                 <div className="m-2">
                   <img
@@ -25,8 +25,8 @@ export default function Portfolio() {
                   />
                 </div>
                 <div className="mt-2 px-4 pb-4">
-                  <h4 className="mb-1 font-semibold">{item.title}</h4>
-                  <p className="font-inter text-sm">{item.description}</p>
+                  <h4 className="mb-1 font-semibold dark:text-white">{item.title}</h4>
+                  <p className="font-inter text-sm dark:text-white">{item.description}</p>
                 </div>
               </div>
             </Link>

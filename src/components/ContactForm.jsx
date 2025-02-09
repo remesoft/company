@@ -38,18 +38,18 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact-us" className="px-4 py-20 xl:px-0">
+    <section id="contact-us" className="px-4 py-20 xl:px-0 dark:bg-[#14171F]">
       <div className="mx-auto max-w-[800px]">
-        <h2 className="text-3xl font-semibold leading-[45px]">
+        <h2 className="text-3xl font-semibold leading-[45px] dark:text-white">
           Love to hear from you,
           <br /> Get in touch 👋
         </h2>
         <form className="mt-4" onSubmit={handleFormSubmit}>
           <div className="mt-5 flex flex-col gap-5 md:grid md:grid-cols-2">
             <div className="flex flex-col gap-2">
-              <label htmlFor="name">Your Name</label>
+              <label htmlFor="name" className="dark:text-white">Your Name</label>
               <input
-                className="rounded border border-slate-200 bg-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
+                className="rounded border border-slate-200 bg-white dark:bg-[#14171F] px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
                 type="text"
                 name="name"
                 id="name"
@@ -58,9 +58,9 @@ export default function ContactForm() {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="email">Your Email</label>
+              <label htmlFor="email" className="dark:text-white">Your Email</label>
               <input
-                className="rounded border border-slate-200 bg-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
+                className="rounded border border-slate-200 bg-white dark:bg-[#14171F] px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
                 type="email"
                 name="email"
                 id="email"
@@ -69,9 +69,9 @@ export default function ContactForm() {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="phone">Phone</label>
+              <label htmlFor="phone" className="dark:text-white">Phone</label>
               <input
-                className="rounded border border-slate-200 bg-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
+                className="rounded border border-slate-200 bg-white dark:bg-[#14171F] px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
                 type="number"
                 name="phone"
                 id="phone"
@@ -80,33 +80,33 @@ export default function ContactForm() {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="service">What service are you looking for?</label>
+              <label htmlFor="service" className="dark:text-white">What service are you looking for?</label>
               <select
                 id="service"
                 name="service"
                 value={selectedService} // Controlled state
                 onChange={(e) => setSelectedService(e.target.value)}
-                className="rounded border border-slate-200 bg-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
+                className="rounded border border-slate-200 bg-white dark:bg-[#14171F] dark:text-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
                 required
               >
-                <option value="" disabled>
+                <option className="dark:text-white" value="" disabled>
                   Select a service
                 </option>
-                <option value="website">Website</option>
-                <option value="app">App</option>
-                <option value="Graphics Design">Graphics Design</option>
-                <option value="seo">SEO</option>
-                <option value="Video Editing">Video Editing</option>
-                <option value="Content Writing">Content Writing</option>
+                <option className="dark:text-white" value="website">Website</option>
+                <option className="dark:text-white" value="app">App</option>
+                <option className="dark:text-white" value="Graphics Design">Graphics Design</option>
+                <option className="dark:text-white" value="seo">SEO</option>
+                <option className="dark:text-white" value="Video Editing">Video Editing</option>
+                <option className="dark:text-white" value="Content Writing">Content Writing</option>
               </select>
             </div>
             <div className="col-span-2 flex flex-col gap-2">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message" className="dark:text-white">Message</label>
               <textarea
                 name="message"
                 placeholder="Tell us more about your work"
                 rows={4}
-                className="rounded border border-slate-200 bg-white px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
+                className="rounded border border-slate-200 bg-white dark:bg-[#14171F] px-4 py-2 transition focus:bg-slate-50 focus:outline-none"
                 required
               ></textarea>
             </div>
@@ -114,7 +114,7 @@ export default function ContactForm() {
 
           {/* Submit Button */}
           <button
-            className="mt-8 flex w-56 items-center justify-center gap-2 rounded bg-[#14171F] py-2 text-white transition hover:bg-[#1d222e] disabled:cursor-not-allowed disabled:bg-gray-400"
+            className="mt-8 flex w-56 items-center justify-center gap-2 rounded bg-[#14171F] dark:bg-white dark:text-[#14171F] py-2 text-white transition hover:bg-[#1d222e] disabled:cursor-not-allowed disabled:bg-gray-400"
             type="submit"
             disabled={isLoading} // Disable button while loading
           >

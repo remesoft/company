@@ -12,13 +12,13 @@ export default function Accordion() {
   };
 
   return (
-    <section className="bg-[#F5F6F8] px-4 py-16">
+    <section className="bg-[#F5F6F8] px-4 py-16 dark:bg-[#132333]">
       <SectionIntro subtitle="Frequently Asked Questions" />
       <div className="mx-auto mt-8 max-w-[1200px]">
         {accordionData.map((item, index) => (
           <div key={index} className="border-b border-[#dddddd]">
             <button
-              className={`flex w-full items-center justify-between gap-2 py-5 text-left transition ${
+              className={`flex w-full items-center justify-between gap-2 py-5 text-left transition dark:text-white ${
                 openIndex === index ? "font-semibold" : ""
               }`}
               onClick={() => toggleAccordion(index)}
@@ -41,7 +41,7 @@ export default function Accordion() {
               transition={{ duration: 0.3, ease: "easeInOut" }}
               className="overflow-hidden"
             >
-              <div className="mb-4 pb-4 text-gray-700">{item.content}</div>
+              <div className="mb-4 pb-4 text-gray-700 dark:text-white">{item.content}</div>
             </motion.div>
           </div>
         ))}

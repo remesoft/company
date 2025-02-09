@@ -5,10 +5,15 @@ import logoDark from "../assets/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 // import { Link as RouterLink, NavLink } from "react-router-dom";
 // import { Link as ScrollLink } from "react-scroll";
-import { CallAddIcon, Menu11Icon } from "hugeicons-react";
+import {
+  CallAddIcon,
+  Menu11Icon,
+  Moon02Icon,
+  Sun03Icon,
+} from "hugeicons-react";
 import menuData from "../data/main-menu";
 
-export default function Navbar() {
+export default function Navbar({ darkMode, handleDarkMode }) {
   const ripple = new Ripple();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +29,20 @@ export default function Navbar() {
 
   return (
     <section
-      className={`navbar ${isScrolled ? "scrolled" : ""} ${isOpen ? "bg-[#0E1925]" : ""}`}
+      className={`navbar ${isScrolled ? "scrolled" : ""} ${isOpen ? "bg-[#0E1925]" : ""} ${darkMode ? "dark" : ""} dark:bg-[#0E1925]`}
     >
       <div className="relative mx-auto flex max-w-[1200px] items-center justify-between px-4 py-4 xl:px-0">
         {/* logo area start */}
         <Link to="/">
-          <img className="h-10" src={isScrolled ? logoDark : logo} alt="logo" />
+          {(() => {
+            if (isScrolled && darkMode) {
+              return <img className="h-10" src={logo} alt="logo" />;
+            } else if (isScrolled && !darkMode) {
+              return <img className="h-10" src={logoDark} alt="logo" />;
+            } else {
+              return <img className="h-10" src={logo} alt="logo" />;
+            }
+          })()}
         </Link>
 
         {/* menu area start */}
@@ -46,7 +59,7 @@ export default function Navbar() {
               <li key={index} className="w-full">
                 <NavLink
                   to={item.path}
-                  className={`${isScrolled ? "text-black hover:bg-slate-400" : "text-white hover:bg-slate-100"} mx-auto flex w-[40%] items-center justify-center gap-2 whitespace-nowrap rounded-full py-2 transition-all hover:bg-opacity-10 lg:w-auto lg:px-4 xl:w-auto xl:py-1`}
+                  className={`${isScrolled ? "text-black hover:bg-slate-400" : "text-white hover:bg-slate-100"} mx-auto flex w-[40%] items-center justify-center gap-2 whitespace-nowrap rounded-full py-2 transition-all hover:bg-opacity-10 dark:text-white lg:w-auto lg:px-4 xl:w-auto xl:py-1`}
                   onClick={(e) => {
                     setTimeout(() => setIsOpen(false), 200);
                     ripple.create(e, isScrolled ? "dark" : "light");
@@ -59,12 +72,17 @@ export default function Navbar() {
             ))}
           </ul>
         </nav>
+        <div>
+          <button className="dark:text-white" onClick={handleDarkMode}>
+            {darkMode ? <Sun03Icon size={25} /> : <Moon02Icon size={25} />}
+          </button>
+        </div>
 
         {/* buttons area start */}
         <div className="flex items-center gap-2">
           <Link
             to="#contact-us"
-            className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition-all hover:cursor-pointer hover:bg-slate-50"
+            className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition-all hover:cursor-pointer hover:bg-slate-50 dark:bg-[#0E1925] dark:text-white"
             onClick={(e) => ripple.create(e, "dark")}
           >
             <CallAddIcon className="h-5 w-5" />

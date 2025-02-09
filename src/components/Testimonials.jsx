@@ -22,7 +22,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="section-padding">
+    <section className="section-padding dark:bg-[#0E1925]">
       <div className="section-margin">
         <SectionIntro
           title="Testimonials"
