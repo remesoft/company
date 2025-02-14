@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
     <>
       <PageIntro
         title="Privacy Policy"
-        description="At [Company Name], we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or use our services."
+        description="At Adverse, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or use our services."
       />
       <section>
         <div className="mx-auto flex max-w-[900px] flex-col gap-10 px-4 py-10 lg:px-0">

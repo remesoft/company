@@ -9,10 +9,10 @@ export default function About() {
         <div className="section-margin flex flex-col md:flex-row">
           <div className="w-full p-4 md:w-[50%]">
             <h2 className="mb-4 text-4xl font-semibold">
-              About [Company Name]
+              About Adverse
             </h2>
             <p className="leading-8">
-              At [Company Name], we specialize in providing high-quality IT
+              At Adverse, we specialize in providing high-quality IT
               services, including website development, graphic design, SEO,
               content writing, and video editing. Our goal is to help businesses
               grow by combining creativity with the latest technology to deliver

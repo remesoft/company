@@ -13,7 +13,7 @@ export default function TermsConditions() {
           <div>
             <h2 className="text-xl font-semibold">1. Acceptance of Terms</h2>
             <p className="mt-2">
-              By engaging with [Company Name] ("we," "us," or "our"), you
+              By engaging with Adverse, you
               agree to comply with and be bound by these Terms and Conditions.
               If you do not agree, please refrain from using our services.
             </p>
