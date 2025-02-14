@@ -19,7 +19,7 @@ export default function Footer() {
             <img className="h-7" src={logo} alt="company logo" />
           </Link>
           <p className="mt-4">
-            At BinaryBloom, we specialize in crafting custom websites, apps, and
+            At Adverse, we specialize in crafting custom websites, apps, and
             tools that help businesses grow and thrive. From concept to code, we
             bring your vision to life with innovative solutions tailored to your
             needs.
@@ -132,7 +132,7 @@ export default function Footer() {
             <ul className="mt-6 flex flex-col gap-4">
               <li>
                 <Link to="#" className="flex gap-2 hover:underline">
-                  <Mail01Icon /> info@binarybloom.com
+                  <Mail01Icon /> info@adverse.com
                 </Link>
               </li>
               <li>
