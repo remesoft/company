@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="mx-auto max-w-[1200px] px-4 py-16 lg:flex lg:gap-12 xl:px-0">
         <div className="flex flex-col gap-2 md:items-center md:text-center lg:w-[30%] lg:items-start lg:text-left">
           <Link to="/">
-            <img src={logo} alt="company logo" />
+            <img className="h-7" src={logo} alt="company logo" />
           </Link>
           <p className="mt-4">
             At BinaryBloom, we specialize in crafting custom websites, apps, and
@@ -93,12 +93,11 @@ export default function Footer() {
           <div className="md:text-left lg:text-left">
             <h3 className="text-xl font-bold">Services</h3>
             <ul className="mt-6 flex flex-col gap-4">
-            <li>
+              <li>
                 <Link to="/#services" className="hover:underline">
                   SEO
                 </Link>
               </li>
-
 
               <li>
                 <Link to="/#services" className="hover:underline">
@@ -115,7 +114,7 @@ export default function Footer() {
                 <Link to="/#services" className="hover:underline">
                   Graphics Design
                 </Link>
-              </li>   
+              </li>
               <li>
                 <Link to="/#services" className="hover:underline">
                   App Development

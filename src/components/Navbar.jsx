@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="relative mx-auto flex max-w-[1200px] items-center justify-between px-4 py-4 xl:px-0">
         {/* logo area start */}
         <Link to="/">
-          <img className="h-10" src={isScrolled ? logoDark : logo} alt="logo" />
+          <img className="h-6" src={isScrolled ? logoDark : logo} alt="logo" />
         </Link>
 
         {/* menu area start */}

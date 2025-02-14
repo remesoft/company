@@ -1,6 +1,5 @@
 import React from "react";
-import SectionIntro from "./ui/SectionIntro";
-import about from "../assets/about/About-img.png";
+import about from "../assets/about/about-img.webp";
 
 export default function About() {
   return (
@@ -8,14 +7,12 @@ export default function About() {
       <section id="about-us" className="section-padding bg-[#F5F6F8]">
         <div className="section-margin flex flex-col md:flex-row">
           <div className="w-full p-4 md:w-[50%]">
-            <h2 className="mb-4 text-4xl font-semibold">
-              About [Company Name]
-            </h2>
+            <h2 className="mb-4 text-4xl font-semibold">About Adverse.</h2>
             <p className="leading-8">
-              At [Company Name], we specialize in providing high-quality IT
-              services, including website development, graphic design, SEO,
-              content writing, and video editing. Our goal is to help businesses
-              grow by combining creativity with the latest technology to deliver
+              At Adverse, we specialize in providing high-quality IT services,
+              including website development, graphic design, SEO, content
+              writing, and video editing. Our goal is to help businesses grow by
+              combining creativity with the latest technology to deliver
               impactful digital solutions.
             </p>
             <p className="mt-4 leading-8">
