@@ -1,5 +1,4 @@
 {
-  "homepage": "https://remesoft.github.io/company",
   "name": "my-project",
   "private": true,
   "version": "0.0.0",
@@ -8,14 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "bun run build",
-    "deploy": "bunx gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "framer-motion": "^12.0.6",
-    "gh-pages": "^6.3.0",
     "hugeicons-react": "^0.3.0",
     "lottie-react": "^2.4.1",
     "lottie-web": "^5.12.2",
