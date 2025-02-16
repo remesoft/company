@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import HeroDivider from "../components/HeroDivider";
 import Hero from "../components/Hero";
 import About from "../components/About";
+import TawkToChat from "../components/TawkToChat";
 
 export default function Home() {
   const location = useLocation(); // React Router hook to get the current path
@@ -37,6 +38,7 @@ export default function Home() {
     <>
       <Header>
         <Hero />
+        <TawkToChat/>
       </Header>
       <HeroDivider />
       <Services />
