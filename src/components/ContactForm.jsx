@@ -10,7 +10,7 @@ export default function ContactForm() {
     e.preventDefault();
     setIsLoading(true); // Start loading
     const url =
-      "https://script.google.com/macros/s/AKfycbw4LbtDC2OnBEnBGkf9E4hRXhFf4AcCUxmndhVLrqMq4eFBwDs6dzJg0Yk6moiG5Qd6fw/exec";
+      "https://script.google.com/macros/s/AKfycbzieY_mgqY6bF204SjKfA_wGMe8x_tt6dEQjhZFLlK2XutBnQfxUs9O0sQMYTzaiXPZMw/exec";
 
     const formData = new URLSearchParams();
     formData.append("Name", e.target.name.value);
