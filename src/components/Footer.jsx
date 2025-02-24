@@ -132,7 +132,7 @@ export default function Footer() {
             <ul className="mt-6 flex flex-col gap-4">
               <li>
                 <Link to="#" className="flex gap-2 hover:underline">
-                  <Mail01Icon /> info@adverse.com
+                  <Mail01Icon /> tech.adverse@gmail.com
                 </Link>
               </li>
               <li>
